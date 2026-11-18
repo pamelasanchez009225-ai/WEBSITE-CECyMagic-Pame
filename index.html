@@ -51,17 +51,38 @@ body{
     to{
         transform:translateX(-100%);     } }
 
+
 /* PORTADA...................................................... */
 /* PORTADA */
 .hero {
-    background-image: url("Pueblo_Valle.jpeg");
+    background-image: url("Pueblito.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 250px 0;
-    color: Black;
+    padding: 300px 0;
+    color: black;
     text-align: center;
 }
 
+/* Adaptación de portada para dispositivos móviles */
+@media (max-width: 768px) {
+    .hero {
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 180px 15px;
+        min-height: 400px;
+    }
+}
+
+/* Adaptación para celulares pequeños */
+@media (max-width: 480px) {
+    .hero {
+        background-position: center center;
+        background-size: cover;
+        padding: 130px 10px;
+        min-height: 350px;
+    }
+}
 /* TEXTO DE LA PORTADA */
 .hero-content {
     Black: 100%;
